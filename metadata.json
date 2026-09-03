@@ -1,0 +1,8 @@
+{
+  "name": "MIRRA — Peças & projetos em resina",
+  "description": "Desenvolvemos peças e projetos personalizados em resina, do conceito ao acabamento. Montes Claros • MG.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

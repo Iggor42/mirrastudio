@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-marfim: #F2EFEA;
+  --color-floresta: #2E3A33;
+  --color-grafite: #242320;
+  --color-areia: #C5B8A8;
+  --color-mineral: #8A8172;
+  --color-ambar: #A8754F;
+  --color-rose: #B98987;
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-marfim text-grafite font-body antialiased selection:bg-ambar selection:text-marfim;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight font-light;
+  }
+  
+  .font-editorial {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-ambar);
+  outline-offset: 4px;
+}

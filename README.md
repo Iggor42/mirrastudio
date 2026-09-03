@@ -1,11 +1,27 @@
-<div align="center">
+# MIRRA
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Ambiente oficial web da MIRRA — Peças e projetos em resina.
 
-  <h1>Built with AI Studio</h2>
+## Stack
+- **Framework**: React 19 + Vite
+- **Styling**: Tailwind CSS v4
+- **Routing**: React Router v7
+- **Motion**: framer-motion (motion/react)
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Estrutura
+- `src/components/brand`: Assets da identidade visual componentizados em SVG (inline), controlados por `currentColor`.
+- `src/config/mirra.ts`: Banco de dados editorial local (projetos, textos, capítulos, contato).
+- `src/lib/handoff.ts`: Lógica de integração com o sistema NEXO (orçamentos e prospecção).
+- `src/lib/analytics.ts`: Tracking simples de eventos (page_view, handoff_to_site, cta_clicked).
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Setup Local
+```bash
+npm install
+npm run dev
+```
 
-</div>
+## Pendências de Assets
+- Injetar o texto XML final dos SVGs em `/src/components/brand/`
+- Adicionar vídeos .mp4 em `/public/assets/videos/`
+- Adicionar imagens em `/public/assets/projects/` e `/public/assets/posters/`
+- Renderizar `og-mirra.jpg` para `public/assets/og/`
