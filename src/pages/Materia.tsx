@@ -1,6 +1,6 @@
 import { PageTransition } from "@/components/PageTransition";
 import { SectionLabel } from "@/components/SectionLabel";
-import { CinematicResinPlayer } from "@/components/CinematicResinPlayer";
+import { VideoBackground } from "@/components/VideoBackground";
 import { mirra } from "@/config/mirra";
 
 export function Materia() {
@@ -32,11 +32,10 @@ export function Materia() {
                     <p className="text-xs text-grafite/60 font-light italic">{item.note}</p>
                   </div>
                 </div>
-                <div className="order-1 lg:order-2">
-                  <CinematicResinPlayer 
+                <div className="order-1 lg:order-2 overflow-hidden rounded-sm">
+                  <VideoBackground 
                     srcMp4={item.media}
                     poster={item.poster}
-                    alt={item.title}
                     className="w-full aspect-[4/5] lg:aspect-square"
                   />
                 </div>
