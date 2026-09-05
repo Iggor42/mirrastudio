@@ -311,13 +311,13 @@ export function NexoBriefingGuiado() {
                   type="submit"
                   className="ml-auto py-3 px-8 border border-grafite text-grafite hover:bg-ambar hover:border-ambar hover:text-marfim transition-all duration-300 text-xs uppercase tracking-widest font-medium shadow-sm"
                 >
-                  {step === 4 ? "Enviar para o ateliê ↗" : "Próximo →"}
+                  {step === 4 ? "Enviar para o estúdio ↗" : "Próximo →"}
                 </button>
               </div>
             </form>
 
             <p className="text-center text-[11px] text-mineral/70 font-light mt-8">
-              Atendimento direto com o ateliê • Montes Claros, MG
+              Atendimento direto com o estúdio • Montes Claros, MG
             </p>
           </div>
         ) : (
@@ -328,7 +328,7 @@ export function NexoBriefingGuiado() {
             </div>
 
             <h2 className="text-2xl md:text-3xl font-editorial text-grafite mb-3 tracking-tight">
-              Sua ideia está a caminho do ateliê.
+              Sua ideia está a caminho do estúdio.
             </h2>
             <p className="text-sm text-grafite/70 font-light leading-relaxed max-w-sm mx-auto mb-6">
               Abrimos o WhatsApp com o resumo organizado do seu briefing. Envie a mensagem na conversa para iniciar.
