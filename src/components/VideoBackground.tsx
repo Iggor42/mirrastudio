@@ -38,7 +38,7 @@ export function VideoBackground({ srcMp4, poster, className }: VideoBackgroundPr
       muted
       loop
       playsInline
-      preload="metadata"
+      preload="auto"
       poster={poster}
     >
       <source src={srcMp4} type="video/mp4" />
