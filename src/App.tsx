@@ -7,12 +7,20 @@ import { Processo } from "./pages/Processo";
 import { Materia } from "./pages/Materia";
 import { AMirra } from "./pages/AMirra";
 import { Contato } from "./pages/Contato";
+import { NexoLink } from "./pages/NexoLink";
+import { NexoAdmin } from "./pages/NexoAdmin";
 import { NotFound } from "./pages/NotFound";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Nexo Link Landing Pages (minimal, without standard site header/footer) */}
+        <Route path="/l" element={<NexoLink />} />
+        <Route path="/l/:campanha" element={<NexoLink />} />
+        <Route path="/l-admin" element={<NexoAdmin />} />
+
+        {/* Standard Website Pages */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="projetos" element={<Projetos />} />

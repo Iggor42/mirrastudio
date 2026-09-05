@@ -329,6 +329,7 @@ export const mirra = {
   contact: {
     location: "Montes Claros • MG",
     instagram: "mirrastudiomoc",
+    whatsapp: "553800000000", // TROCAR PELO NÚMERO REAL
     cta: "Conte sua ideia ↗"
   }
 };
