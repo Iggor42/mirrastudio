@@ -21,8 +21,8 @@ export function Contato() {
                 Algumas ideias chegam prontas. Outras ainda precisam ser descobertas. Em ambos os casos, o primeiro passo é contar o que você imagina.
               </p>
               
-              <CTA href={nexoUrl} external={nexoUrl.startsWith("http")}>
-                {hasNexo ? "Começar pelo Nexo ↗" : "Em breve: briefing guiado MIRRA"}
+              <CTA href="/l/default">
+                Iniciar briefing guiado ↗
               </CTA>
             </div>
 

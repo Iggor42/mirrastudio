@@ -329,7 +329,7 @@ export const mirra = {
   contact: {
     location: "Montes Claros • MG",
     instagram: "mirrastudiomoc",
-    whatsapp: "553800000000", // TROCAR PELO NÚMERO REAL
+    whatsapp: (typeof import.meta !== "undefined" && import.meta.env?.VITE_WHATSAPP_NUMBER) || "553800000000", // TROCAR PELO NÚMERO REAL (só dígitos: 55 + DDD + número) ou configurar VITE_WHATSAPP_NUMBER
     cta: "Conte sua ideia ↗"
   }
 };
